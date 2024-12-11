@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "747546326489",
+    "project_id": "chathub-933d5",
+    "storage_bucket": "chathub-933d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747546326489:android:e9f2680ba68476578c15c8",
+        "android_client_info": {
+          "package_name": "anikshakya.np.chathub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747546326489-h9onsc49nls21eote7oogffea8np6au4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "anikshakya.np.chathub",
+            "certificate_hash": "f49d0562fd766713e7ba78293d5dc69d3e068018"
+          }
+        },
+        {
+          "client_id": "747546326489-8p8fn8gtqo4d0r0fbmdm6vu3stvv1kva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFJbMmU9Q9oqXnKJBKz8MiITfPY9qTUFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747546326489-8p8fn8gtqo4d0r0fbmdm6vu3stvv1kva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
