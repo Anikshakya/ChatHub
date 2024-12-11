@@ -47,7 +47,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAFJbMmU9Q9oqXnKJBKz8MiITfPY9qTUFg',
+    apiKey: 'YOUR API KEY',
     appId: '1:747546326489:android:e9f2680ba68476578c15c8',
     messagingSenderId: '747546326489',
     projectId: 'chathub-933d5',
@@ -55,18 +55,18 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCCYZoZ5DvuitZJ7qK5iWM3ARHBDoFFriY',
+    apiKey: 'YOUR API KEY',
     appId: '1:288842837392:ios:f39c8dc31525a6687a5715',
     messagingSenderId: '288842837392',
     projectId: 'chathub-933d5',
     storageBucket: 'chathub-933d5.appspot.com',
     androidClientId: '288842837392-gvt1l790g0t1fmnurc5pmko3oss8b1tq.apps.googleusercontent.com',
     iosClientId: '288842837392-sgib97u6439i4jte3bo19u00fh663euu.apps.googleusercontent.com',
-    iosBundleId: 'com.harshRajpurohit.weChat',
+    iosBundleId: 'anikshakya.np.chathub',
   );
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBW-1MjB067GUwQHPnYmWkr_4iMz13UgRs',
+    apiKey: 'YOUR API KEY',
     appId: '1:288842837392:web:6ae5bafc6d7d4f407a5715',
     messagingSenderId: '288842837392',
     projectId: 'chathub-933d5',
