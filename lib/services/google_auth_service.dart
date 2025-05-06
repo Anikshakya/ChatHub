@@ -22,12 +22,12 @@ class GoogleAuthService {
       if (googleUser == null) return null; // User closed the sign-in popup
 
       // Step 3: Obtain authentication details from the Google account
-      final GoogleSignInAuthentication? googleAuth = await googleUser.authentication;
+      GoogleSignInAuthentication? googleAuth = await googleUser.authentication;
 
       // Step 4: Create a credential using Google token
       final credential = GoogleAuthProvider.credential(
-        accessToken: googleAuth?.accessToken,
-        idToken: googleAuth?.idToken,
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
       );
 
       // Step 5: Sign in to Firebase using the Google credentials

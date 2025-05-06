@@ -40,6 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (await APIs.userExists()) {
         Navigator.pushReplacement(
+          // ignore: use_build_context_synchronously
           context,
           MaterialPageRoute(builder: (_) => const HomeScreen()),
         );
@@ -88,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
             onPressed: _handleGoogleBtnClick,
             icon: Image.asset('assets/images/google.png', height: mq.height * .03),
             label: RichText(
-              text: TextSpan(
+              text: const TextSpan(
                 style: TextStyle(color: Colors.black, fontSize: 16),
                 children: [
                   TextSpan(text: 'Login with '),
