@@ -14,7 +14,7 @@ class ProfileDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       contentPadding: EdgeInsets.zero,
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: Colors.white.withValues(alpha: 0.9),
       shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(15))),
       content: SizedBox(

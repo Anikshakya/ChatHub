@@ -1,0 +1,2 @@
+D:/Anik/ChatHub/android/app/.cxx/Debug/2r53434f/x86/CMakeFiles/edit_cache.dir
+D:/Anik/ChatHub/android/app/.cxx/Debug/2r53434f/x86/CMakeFiles/rebuild_cache.dir

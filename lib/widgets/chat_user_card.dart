@@ -40,7 +40,7 @@ class _ChatUserCardState extends State<ChatUserCard> {
           boxShadow: [
             // Subtle shadow for depth
             BoxShadow(
-              color: Colors.grey.withOpacity(0.1),
+              color: Colors.grey.withValues(alpha: 0.1),
               spreadRadius: 2,
               blurRadius: 8,
               offset: const Offset(0, 4),

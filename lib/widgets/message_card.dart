@@ -5,8 +5,6 @@ import 'dart:developer';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:gallery_saver_updated/gallery_saver.dart';
-
 import '../api/apis.dart';
 import '../helper/dialogs.dart';
 import '../helper/my_date_util.dart';
@@ -213,16 +211,16 @@ class _MessageCardState extends State<MessageCard> {
                       onTap: () async {
                         try {
                           log('Image Url: ${widget.message.msg}');
-                          await GallerySaver.saveImage(widget.message.msg,
-                                  albumName: 'ChatHub')
-                              .then((success) {
-                            //for hiding bottom sheet
-                            Navigator.pop(context);
-                            if (success != null && success) {
-                              Dialogs.showSnackbar(
-                                  context, 'Image Successfully Saved!');
-                            }
-                          });
+                          // await GallerySaver.saveImage(widget.message.msg,
+                          //         albumName: 'ChatHub')
+                          //     .then((success) {
+                          //   //for hiding bottom sheet
+                          //   Navigator.pop(context);
+                          //   if (success != null && success) {
+                          //     Dialogs.showSnackbar(
+                          //         context, 'Image Successfully Saved!');
+                          //   }
+                          // });
                         } catch (e) {
                           log('ErrorWhileSavingImg: $e');
                         }

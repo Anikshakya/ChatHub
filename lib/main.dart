@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:chat_hub/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -14,10 +13,11 @@ late Size mq;
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  _initializeFirebase();
+
   //enter full-screen
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
-  await _initializeFirebase();
 
   //for setting orientation to portrait only
   SystemChrome.setPreferredOrientations(
@@ -27,6 +27,18 @@ Future<void> main() async {
   });
 }
 
+Future<void> _initializeFirebase() async {
+    await Firebase.initializeApp();
+  
+    var result = await FlutterNotificationChannel().registerNotificationChannel(
+        description: 'ChatHub',
+        id: 'chathub',
+        importance: NotificationImportance.IMPORTANCE_HIGH,
+        name: 'ChatHub');
+  
+    log('\nNotification Channel Result: $result');
+  }
+  
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -49,17 +61,5 @@ class MyApp extends StatelessWidget {
             )),
         home: const SplashScreen());
   }
-}
-
-Future<void> _initializeFirebase() async {
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-
-  var result = await FlutterNotificationChannel().registerNotificationChannel(
-      description: 'ChatHub',
-      id: 'chathub',
-      enableSound: true,
-      importance: NotificationImportance.IMPORTANCE_HIGH,
-      name: 'ChatHub');
-
-  log('\nNotification Channel Result: $result');
+ 
 }
